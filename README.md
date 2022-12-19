@@ -1,5 +1,8 @@
 # choose-your-own-adventure-201
 
+## Assignments
+- [Project Prep - PM Tool](https://github.com/orgs/Choose-your-own-adventure-201/projects/1)
+
 ## Collaborators
 - Dennis Palucki, Steve Gant, Marco Villafana, Benjamin Rude, Yaz Ahmed
 
