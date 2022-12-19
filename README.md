@@ -16,7 +16,7 @@
 =======
 ## Attributions
 
-![Page 1 - House](<a href="https://www.freepik.com/free-vector/suburban-house-countryside_13643575.htm#query=cartoon%20house&position=7&from_view=keyword">Image by upklyak</a> on Freepik)
+![Page 1 - House](https://www.freepik.com/free-vector/suburban-house-countryside_13643575.htm#query=cartoon%20house&position=7&from_view=keyword">Image by upklyak)
 ![Page 1 - Mailbox](http://clipart-library.com/clip-art/transparent-mailbox-17.htm)
 ![Page 4 - Dark-alley](https://www.freepik.com/free-vector/empty-dark-urban-backstreet-garbage-containers_34084557.htm#query=dark%20alley&position=37&from_view=search&track=sph)
 >>>>>>> e6ce1289eefd54b2651b62d21209d0ee78a0864c
