@@ -12,3 +12,4 @@
 ## Attributions
 
 ![Page 1 - House](<a href="https://www.freepik.com/free-vector/suburban-house-countryside_13643575.htm#query=cartoon%20house&position=7&from_view=keyword">Image by upklyak</a> on Freepik)
+![Page 1 - Mailbox](http://clipart-library.com/clip-art/transparent-mailbox-17.htm)
