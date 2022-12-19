@@ -2,3 +2,9 @@
 
 ## Collaborators
 - Dennis Palucki, Steve Gant, Marco Villafana, Benjamin Rude, Yaz Ahmed
+
+## Wireframe
+
+![Home page](./img/Home_pg1.png)
+![Adventure page](./img/Adventure_pg2.png)
+![About Us page](./img/About_us_pg3.png)
