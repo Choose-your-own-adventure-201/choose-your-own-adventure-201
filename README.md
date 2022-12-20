@@ -15,3 +15,8 @@
 ## Domain Model
 
 ![domain model](./img/Flowchart.jpg)
+
+## Attributions
+- [Page 1 - House](https://www.freepik.com/free-vector/suburban-house-countryside_13643575.htm#query=cartoon%20house&position=7&from_view=keyword")
+- [Page 1 - Mailbox](http://clipart-library.com/clip-art/transparent-mailbox-17.htm)
+- [Page 4 - Dark-alley](https://www.freepik.com/free-vector/empty-dark-urban-backstreet-garbage-containers_34084557.htm#query=dark%20alley&position=37&from_view=search&track=sph)
