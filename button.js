@@ -7,14 +7,22 @@ let myInput = document.getElementById('username');
 let startBtn = document.getElementById('btnStart');
 
 function handleClick(event) {
-  // let userInput = JSON.stringify(event.target.title);
-  let userInput = event.target.username.value;
-  console.log(userInput);
+  event.preventDefault();
+  // let userInput = JSON.stringify(myInput.value);
   // localStorage.setItem('name', userInput);
+
+  window.location.href = './story.html';
 }
 
-//TODO: ***** Executable *****
+function handleInput()
+{
+  let userInput = JSON.stringify(myInput.value);
+  localStorage.setItem('name', userInput);
+}
 
-//TODO: ***** Event Listeners *****
 
+//**************Executable*******
+
+//***** Event Listeners *****
+myInput.addEventListener('input', handleInput);
 startBtn.addEventListener('click', handleClick);
