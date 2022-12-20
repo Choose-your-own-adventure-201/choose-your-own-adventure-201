@@ -31,6 +31,7 @@
 - What are your stretch goals?
   - Add audio, images and animations
   - Add additional stories
+  - Adjust the code to be modular so that addtional stories could be added with ease
 - What stretch goals are you going to aim for?
   - Audio and animations
 
