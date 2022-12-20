@@ -18,42 +18,40 @@ function Page(story, option1 = '', option2 = '', name) {
 } 
 
 // Helper function
-function storyLine () {
-  let page1 = `After a long hard day at a boring office job ${this.name} arrives at home. Before walking into the house ${this.name} sees a letter in the mailbox, an unusual occurrence as bill day is Thursday not Monday.
- 
-  ${this.name} goes up to the mailbox and sees that there is a little red letter—quite suspicious.`;
+function storyLine (storyObj) {
+  let page1 = `After a long hard day at a boring office job ${storyObj.name} arrives at home. Before walking into the house ${storyObj.name} sees a letter in the mailbox, an unusual occurrence as bill day is Thursday not Monday.
+  ${storyObj.name} goes up to the mailbox and sees that there is a little red letter—quite suspicious.`;
 
-  let page2 = `${this.name} decides that it is too suspicious and chooses to go inside. Half way up the drive ${this.name} slips and falls head first on a rock.
-
-  No one knows what happened to ${this.name}'s body. Did the writer of the letter take it?
+  let page2 = `${storyObj.name} decides that it is too suspicious and chooses to go inside. Half way up the drive ${storyObj.name} slips and falls head first on a rock.
+  No one knows what happened to ${storyObj.name}'s body. Did the writer of the letter take it?
    
   THE END`;
 
-  let page3 = `${this.name} is too curious not to answer the mail. So ${this.name} grabs it out of the mailbox and open it and find seven words.
+  let page3 = `${storyObj.name} is too curious not to answer the mail. So ${storyObj.name} grabs it out of the mailbox and open it and find seven words.
 
   ‘Meet me on the docks at twelve’
   
-  ${this.name} is not that sure whether to go or not because it seems like a stereotypical set up for a camp fire story.  
+  ${storyObj.name} is not that sure whether to go or not because it seems like a stereotypical set up for a camp fire story.  
   
   Drive up to the dock to find out who sent the letter`;
 
-  let page4 = `${this.name} decides to go down to the docks to confront the person who wrote the red letter.
+  let page4 = `${storyObj.name} decides to go down to the docks to confront the person who wrote the red letter.
 
-  11:59 pm and there is no one there. Where is he? ${this.name} thinks, did they forget? Is it a prank?
+  11:59 pm and there is no one there. Where is he? ${storyObj.name} thinks, did they forget? Is it a prank?
   
-  Then ${this.name} hear a car rumble in the distance. A pair of bright yellow headlights pop into existence and they are heading straight at ${this.name} and the noise is getting louder.`;
+  Then ${storyObj.name} hear a car rumble in the distance. A pair of bright yellow headlights pop into existence and they are heading straight at ${storyObj.name} and the noise is getting louder.`;
 
-  let page5 = `${this.name} decides to fight. The car is getting dangerously close to ${this.name}. Five seconds feels like it has been an hour.
+  let page5 = `${storyObj.name} decides to fight. The car is getting dangerously close to ${storyObj.name}. Five seconds feels like it has been an hour.
 
-  The car is getting nearer and ${this.name} is regretting their decision. ${this.name} can now see the red hood of the car coming.
+  The car is getting nearer and ${storyObj.name} is regretting their decision. ${storyObj.name} can now see the red hood of the car coming.
   
-  Just as ${this.name} gets ready for the numbing pain of the impact, it screeches to a stop. A suited man comes out of the car and he is holding a hand gun. “Where is the money?” the man shouts.`;
+  Just as ${storyObj.name} gets ready for the numbing pain of the impact, it screeches to a stop. A suited man comes out of the car and he is holding a hand gun. “Where is the money?” the man shouts.`;
 
-  let page6 = `${this.name} decides to run away. In the distance ${this.name} hears a car. Its headlights are getting closer. ${this.name} takes a left turn into a dark alleyway and end up behind a small boat house. ${this.name} sees the car speed past and ${this.name} decides to flank it.
+  let page6 = `${storyObj.name} decides to run away. In the distance ${storyObj.name} hears a car. Its headlights are getting closer. ${storyObj.name} takes a left turn into a dark alleyway and end up behind a small boat house. ${storyObj.name} sees the car speed past and ${storyObj.name} decides to flank it.
 
-  ${this.name} runs onto the main road and lose it. It only took ${this.name} ten minutes to find the nearest police station.
+  ${storyObj.name} runs onto the main road and lose it. It only took ${storyObj.name} ten minutes to find the nearest police station.
   
-  Once ${this.name} arrives, they quickly tell the story. Thirty minutes later the police sergeant returns looking happy with himself. He tells ${this.name} that they were the bait in a drug bust and now ${this.name} is a key person in the crime of the year.
+  Once ${storyObj.name} arrives, they quickly tell the story. Thirty minutes later the police sergeant returns looking happy with himself. He tells ${storyObj.name} that they were the bait in a drug bust and now ${storyObj.name} is a key person in the crime of the year.
   
   
   THE END`;
@@ -80,12 +78,22 @@ function options() {
 };
 
 function pages() {
-  pageArr.push(new Page(storyArr[0], optArr[0], optArr[1], page1));
-  pageArr.push(new Page(storyArr[1], page2));
-  pageArr.push(new Page(storyArr[2], optArr[2], page3));
-  pageArr.push(new Page(storyArr[3], optArr[3], optArr[4], page4));
-  pageArr.push(new Page(storyArr[4], optArr[5], page5));
-  pageArr.push(new Page(storyArr[5], page6));
+  pageArr.push(new Page(storyArr[0], optArr[0], optArr[1], 'page1'));
+  pageArr.push(new Page(storyArr[1], 'page2'));
+  pageArr.push(new Page(storyArr[2], optArr[2], 'page3'));
+  pageArr.push(new Page(storyArr[3], optArr[3], optArr[4], 'page4'));
+  pageArr.push(new Page(storyArr[4], optArr[5], 'page5'));
+  pageArr.push(new Page(storyArr[5], 'page6'));
 }
+
+// Executable code
+let storyObject = new Story('George'); // testing purposes only
+storyLine(storyObject);
+options();
+pages();
+
+console.log(storyArr);
+console.log(optArr);
+console.log(pageArr);
 
 
