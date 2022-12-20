@@ -9,13 +9,13 @@ let pageArr = [];
 function Story(name) {
   this.name = name;
 }
-
-function Page(story, option1 = '', option2 = '', name) {
+// TODO 
+function Page(story,name, option1 = '', option2 = '') {
   this.story = story;
   this.option1 = option1;
   this.option2 = option2;
   this.name = name;
-} 
+}
 
 // Helper function
 function storyLine (storyObj) {
@@ -75,14 +75,14 @@ function options() {
   let opt6 = 'Run away'; // got to page 6
 
   optArr.push(opt1, opt2, opt5, opt3, opt4, opt6);
-};
+}
 
 function pages() {
-  pageArr.push(new Page(storyArr[0], optArr[0], optArr[1], 'page1'));
+  pageArr.push(new Page(storyArr[0], 'page1', optArr[0], optArr[1]));
   pageArr.push(new Page(storyArr[1], 'page2'));
-  pageArr.push(new Page(storyArr[2], optArr[2], 'page3'));
-  pageArr.push(new Page(storyArr[3], optArr[3], optArr[4], 'page4'));
-  pageArr.push(new Page(storyArr[4], optArr[5], 'page5'));
+  pageArr.push(new Page(storyArr[2], 'page3', optArr[2]));
+  pageArr.push(new Page(storyArr[3], 'page4', optArr[3], optArr[4]));
+  pageArr.push(new Page(storyArr[4], 'page5', optArr[5]));
   pageArr.push(new Page(storyArr[5], 'page6'));
 }
 
