@@ -105,19 +105,39 @@ function handleClick(event){
   event.preventDefault();
 
   switch(selectOpt.value) {
-  case optArr[0]:
+  case optArr[0]: //open mail to page 3
+    storyText.textContent = pageArr[2].story;
+    choiceOne.textContent = pageArr[2].option1;
+    choiceOne.value = pageArr[2].option1;
+    choiceTwo.textContent = pageArr[2].option2;
+    choiceTwo.value = pageArr[2].option2;
+    break;
+  case optArr[1]: // go inside, story ends
+    alert('Your adventure ends here!  Thanks for playing!');
     break;
 
-  case optArr[1]:
+  case optArr[2]: // stand your ground go to page 5
+    storyText.textContent = pageArr[4].story;
+    choiceOne.textContent = pageArr[4].option1;
+    choiceOne.value = pageArr[4].option1;
+    choiceTwo.textContent = pageArr[4].option2;
+    choiceTwo.value = pageArr[4].option2;
     break;
 
-  case optArr[2]:
+  case optArr[3]: // run away as fast as you can, go to page 6
+    storyText.textContent = pageArr[5].story;
+    choiceOne.textContent = pageArr[5].option1;
+    choiceOne.value = pageArr[5].option1;
+    choiceTwo.textContent = pageArr[5].option2;
+    choiceTwo.value = pageArr[5].option2;
     break;
 
-  case optArr[3]:
-    break;
-
-  case optArr[4]:
+  case optArr[4]: // stand your ground, go to page 5
+    storyText.textContent = pageArr[3].story;
+    choiceOne.textContent = pageArr[3].option1;
+    choiceOne.value = pageArr[3].option1;
+    choiceTwo.textContent = pageArr[3].option2;
+    choiceTwo.value = pageArr[3].option2;
     break;
 
   case optArr[5]:
