@@ -11,9 +11,10 @@ let myForm = document.querySelector('form');
  */
 function handleClick(event) {
   event.preventDefault();
+  let userName = event.target.username.value;
 
   // ****** Stored inputed user name to local storage *****
-  let userInput = JSON.stringify(event.target.username.value);
+  let userInput = JSON.stringify(userName.toUpperCase());
   localStorage.setItem('username', userInput);
 
   window.location.href = './story.html';

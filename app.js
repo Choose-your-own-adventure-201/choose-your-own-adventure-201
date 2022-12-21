@@ -11,6 +11,8 @@ let choiceTwo = document.getElementById('option2');
 let storyText = document.getElementById('story-text');
 let myForm = document.querySelector('form');
 let selectOpt = document.getElementById('options');
+let optBtn = document.getElementById('options-btn');
+let pgImg = document.getElementById('page-image');
 
 // Constructor function
 function Page(story, option1 = '', option2 = '', name) {
@@ -89,15 +91,13 @@ function pages() {
   pageArr.push(new Page(storyArr[5], 'page6'));
 }
 
-function renderPages(){
-
+function renderPage(){
   storyText.textContent = pageArr[0].story;
   choiceOne.textContent = pageArr[0].option1;
   choiceOne.value = pageArr[0].option1;
   choiceTwo.textContent = pageArr[0].option2;
   choiceTwo.value = pageArr[0].option2;
-
-
+  pgImg.src = "./img/mailbox.jpg";
 }
 
 // Event Handlers
@@ -109,10 +109,21 @@ function handleClick(event){
     storyText.textContent = pageArr[2].story;
     choiceOne.textContent = pageArr[2].option1;
     choiceOne.value = pageArr[2].option1;
-    choiceTwo.textContent = pageArr[2].option2;
-    choiceTwo.value = pageArr[2].option2;
+    choiceTwo.textContent = '';
+    choiceTwo.value = '';
+    pgImg.src = "./img/dark-pier.jpg";
     break;
-  case optArr[1]: // go inside, story ends
+
+  case optArr[1]: // go inside, story ends. go to page 2
+    storyText.textContent = pageArr[1].story;
+    choiceOne.textContent = '';
+    choiceOne.value = '';
+    choiceTwo.textContent = '';
+    choiceTwo.value = '';
+    pgImg.src = "./img/driveway.jpg";
+
+    myForm.style.visibility = 'hidden';
+
     alert('Your adventure ends here!  Thanks for playing!');
     break;
 
@@ -120,27 +131,41 @@ function handleClick(event){
     storyText.textContent = pageArr[4].story;
     choiceOne.textContent = pageArr[4].option1;
     choiceOne.value = pageArr[4].option1;
-    choiceTwo.textContent = pageArr[4].option2;
-    choiceTwo.value = pageArr[4].option2;
+    choiceTwo.textContent = '';
+    choiceTwo.value = '';
+    pgImg.src = "./img/oncoming-Traffic.jpg";
     break;
 
   case optArr[3]: // run away as fast as you can, go to page 6
     storyText.textContent = pageArr[5].story;
-    choiceOne.textContent = pageArr[5].option1;
-    choiceOne.value = pageArr[5].option1;
-    choiceTwo.textContent = pageArr[5].option2;
-    choiceTwo.value = pageArr[5].option2;
+    choiceOne.textContent = '';
+    choiceOne.value = '';
+    choiceTwo.textContent = '';
+    choiceTwo.value = '';
+    pgImg.src = "./img/Undercover-Drug-Busts.jpg";
+
+    myForm.style.visibility = 'hidden';
     break;
 
   case optArr[4]: // stand your ground, go to page 5
-    storyText.textContent = pageArr[3].story;
-    choiceOne.textContent = pageArr[3].option1;
-    choiceOne.value = pageArr[3].option1;
-    choiceTwo.textContent = pageArr[3].option2;
-    choiceTwo.value = pageArr[3].option2;
+    storyText.textContent = pageArr[4].story;
+    choiceOne.textContent = pageArr[4].option1;
+    choiceOne.value = pageArr[4].option1;
+    choiceTwo.textContent = '';
+    choiceTwo.value = '';
+    pgImg.src = "./img/oncoming-Traffic.jpg";
     break;
 
-  case optArr[5]:
+  case optArr[5]: // runaway, go to page 6
+    storyText.textContent = pageArr[5].story;
+    choiceOne.textContent = '';
+    choiceOne.value = '';
+    choiceTwo.textContent = '';
+    choiceTwo.value = '';
+    pgImg.src = "./img/Undercover-Drug-Busts.jpg";
+
+
+    myForm.style.visibility = 'hidden';
     break;
 
   default:
@@ -151,11 +176,11 @@ function handleClick(event){
 // Executable code
 let storeName = localStorage.getItem('username');
 let parseName = JSON.parse(storeName);
-// console.log(parseName);
+
 
 storyLine(parseName);
 options();
 pages();
-renderPages();
+renderPage();
 
 myForm.addEventListener('submit', handleClick);
