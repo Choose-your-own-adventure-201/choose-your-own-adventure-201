@@ -11,6 +11,7 @@ let choiceTwo = document.getElementById('option2');
 let storyText = document.getElementById('story-text');
 let myForm = document.querySelector('form');
 let selectOpt = document.getElementById('options');
+let optBtn = document.getElementById('options-btn');
 
 // Constructor function
 function Page(story, option1 = '', option2 = '', name) {
@@ -108,6 +109,8 @@ function handleClick(event){
     choiceOne.value = pageArr[2].option1;
     choiceTwo.textContent = '';
     choiceTwo.value = '';
+    // optBtn.style.visibility = 'visible';
+    // selectOpt.style.visibility = 'visble';
     break;
 
   case optArr[1]: // go inside, story ends. go to page 2
@@ -116,6 +119,8 @@ function handleClick(event){
     choiceOne.value = '';
     choiceTwo.textContent = '';
     choiceTwo.value = '';
+
+    myForm.style.visibility = 'hidden';
 
     alert('Your adventure ends here!  Thanks for playing!');
     break;
@@ -134,6 +139,8 @@ function handleClick(event){
     choiceOne.value = '';
     choiceTwo.textContent = '';
     choiceTwo.value = '';
+
+    myForm.style.visibility = 'hidden';
     break;
 
   case optArr[4]: // stand your ground, go to page 5
@@ -150,6 +157,8 @@ function handleClick(event){
     choiceOne.value = '';
     choiceTwo.textContent = '';
     choiceTwo.value = '';
+
+    myForm.style.visibility = 'hidden';
     break;
 
   default:
@@ -160,7 +169,7 @@ function handleClick(event){
 // Executable code
 let storeName = localStorage.getItem('username');
 let parseName = JSON.parse(storeName);
-// console.log(parseName);
+
 
 storyLine(parseName);
 options();
