@@ -14,8 +14,8 @@ let selectOpt = document.getElementById('options');
 let optBtn = document.getElementById('options-btn');
 let pgImg = document.getElementById('page-image');
 let body = document.getElementById('bust-body');
-let pLightImg1 = document.getElementById('cop-light-1');
-let pLightImg2 = document.getElementById('cop-light-2');
+let pLightImg1 = document.getElementById('cop-lights-1');
+let pLightImg2 = document.getElementById('cop-lights-2');
 
 
 // Constructor function
