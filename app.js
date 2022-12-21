@@ -112,10 +112,10 @@ function handleClick(event){
 
   case optArr[1]: // go inside, story ends. go to page 2
     storyText.textContent = pageArr[1].story;
-    // choiceOne.textContent = pageArr[1].option1;
-    // choiceOne.value = pageArr[1].option1;
-    // choiceTwo.textContent = pageArr[1].option2;
-    // choiceTwo.value = pageArr[1].option2;
+    choiceOne.textContent = '';
+    choiceOne.value = '';
+    choiceTwo.textContent = '';
+    choiceTwo.value = '';
 
     alert('Your adventure ends here!  Thanks for playing!');
     break;
@@ -124,32 +124,32 @@ function handleClick(event){
     storyText.textContent = pageArr[4].story;
     choiceOne.textContent = pageArr[4].option1;
     choiceOne.value = pageArr[4].option1;
-    // choiceTwo.textContent = pageArr[4].option2;
-    // choiceTwo.value = pageArr[4].option2;
+    choiceTwo.textContent = '';
+    choiceTwo.value = '';
     break;
 
   case optArr[3]: // run away as fast as you can, go to page 6
     storyText.textContent = pageArr[5].story;
-    // choiceOne.textContent = pageArr[5].option1;
-    // choiceOne.value = pageArr[5].option1;
-    // choiceTwo.textContent = pageArr[5].option2;
-    // choiceTwo.value = pageArr[5].option2;
+    choiceOne.textContent = '';
+    choiceOne.value = '';
+    choiceTwo.textContent = '';
+    choiceTwo.value = '';
     break;
 
   case optArr[4]: // stand your ground, go to page 5
     storyText.textContent = pageArr[4].story;
     choiceOne.textContent = pageArr[4].option1;
     choiceOne.value = pageArr[4].option1;
-    // choiceTwo.textContent = pageArr[4].option2;
-    // choiceTwo.value = pageArr[4].option2;
+    choiceTwo.textContent = '';
+    choiceTwo.value = '';
     break;
 
   case optArr[5]: // runaway, go to page 6
     storyText.textContent = pageArr[5].story;
-    // choiceOne.textContent = pageArr[5].option1;
-    // choiceOne.value = pageArr[5].option1;
-    // choiceTwo.textContent = pageArr[5].option2;
-    // choiceTwo.value = pageArr[5].option2;
+    choiceOne.textContent = '';
+    choiceOne.value = '';
+    choiceTwo.textContent = '';
+    choiceTwo.value = '';
     break;
 
   default:
