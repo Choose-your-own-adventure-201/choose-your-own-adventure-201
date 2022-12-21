@@ -1,20 +1,23 @@
 'use strict';
-console.log('Hello World');
 
-// Dom windows
-let myInput = document.getElementById('username');
-let startBtn = document.getElementById('btnStart');
+// ****** Dom windows ******
+let myForm = document.querySelector('form');
 
-
+/**
+ * 
+ * @param {} event
+ * 
+ * Stores user input to local storage and moves to targeted HTML page.
+ */
 function handleClick(event) {
-  // let userInput = JSON.stringify(event.target.title);
-  let userInput = event.target.username.value;
-  console.log(userInput);
-  localStorage.setItem('name', userInput);
+  event.preventDefault();
+
+  // ****** Stored inputed user name to local storage *****
+  let userInput = JSON.stringify(event.target.username.value);
+  localStorage.setItem('username', userInput);
+
+  window.location.href = './story.html';
 }
 
-//TODO: ***** Executable *****
-
-//TODO: ***** Event Listeners *****
-
-startBtn.addEventListener('click', handleClick);
+// ***** Event Listeners *****
+myForm.addEventListener('submit', handleClick);

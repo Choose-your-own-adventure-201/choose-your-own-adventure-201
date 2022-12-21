@@ -5,12 +5,15 @@ let storyArr = [];
 let optArr = [];
 let pageArr = [];
 
+// Dom Window
+let choiceOne = document.getElementById('option1');
+let choiceTwo = document.getElementById('option2');
+let storyText = document.getElementById('story-text');
+let myForm = document.querySelector('form');
+let selectOpt = document.getElementById('options');
+
 // Constructor function
-function Story(name) {
-  this.name = name;
-}
-// TODO 
-function Page(story,name, option1 = '', option2 = '') {
+function Page(story, option1 = '', option2 = '', name) {
   this.story = story;
   this.option1 = option1;
   this.option2 = option2;
@@ -18,40 +21,40 @@ function Page(story,name, option1 = '', option2 = '') {
 }
 
 // Helper function
-function storyLine (storyObj) {
-  let page1 = `After a long hard day at a boring office job ${storyObj.name} arrives at home. Before walking into the house ${storyObj.name} sees a letter in the mailbox, an unusual occurrence as bill day is Thursday not Monday.
-  ${storyObj.name} goes up to the mailbox and sees that there is a little red letter—quite suspicious.`;
+function storyLine (localName) {
+  let page1 = `After a long hard day at a boring office job ${localName} arrives at home. Before walking into the house ${localName} sees a letter in the mailbox, an unusual occurrence as bill day is Thursday not Monday.
+  ${localName} goes up to the mailbox and sees that there is a little red letter—quite suspicious.`;
 
-  let page2 = `${storyObj.name} decides that it is too suspicious and chooses to go inside. Half way up the drive ${storyObj.name} slips and falls head first on a rock.
-  No one knows what happened to ${storyObj.name}'s body. Did the writer of the letter take it?
+  let page2 = `${localName} decides that it is too suspicious and chooses to go inside. Half way up the drive ${localName} slips and falls head first on a rock.
+  No one knows what happened to ${localName}'s body. Did the writer of the letter take it?
    
   THE END`;
 
-  let page3 = `${storyObj.name} is too curious not to answer the mail. So ${storyObj.name} grabs it out of the mailbox and open it and find seven words.
+  let page3 = `${localName} is too curious not to answer the mail. So ${localName} grabs it out of the mailbox and open it and find seven words.
 
   ‘Meet me on the docks at twelve’
   
-  ${storyObj.name} is not that sure whether to go or not because it seems like a stereotypical set up for a camp fire story.  
+  ${localName} is not that sure whether to go or not because it seems like a stereotypical set up for a camp fire story.  
   
   Drive up to the dock to find out who sent the letter`;
 
-  let page4 = `${storyObj.name} decides to go down to the docks to confront the person who wrote the red letter.
+  let page4 = `${localName} decides to go down to the docks to confront the person who wrote the red letter.
 
-  11:59 pm and there is no one there. Where is he? ${storyObj.name} thinks, did they forget? Is it a prank?
+  11:59 pm and there is no one there. Where is he? ${localName} thinks, did they forget? Is it a prank?
   
-  Then ${storyObj.name} hear a car rumble in the distance. A pair of bright yellow headlights pop into existence and they are heading straight at ${storyObj.name} and the noise is getting louder.`;
+  Then ${localName} hear a car rumble in the distance. A pair of bright yellow headlights pop into existence and they are heading straight at ${localName} and the noise is getting louder.`;
 
-  let page5 = `${storyObj.name} decides to fight. The car is getting dangerously close to ${storyObj.name}. Five seconds feels like it has been an hour.
+  let page5 = `${localName} decides to fight. The car is getting dangerously close to ${localName}. Five seconds feels like it has been an hour.
 
-  The car is getting nearer and ${storyObj.name} is regretting their decision. ${storyObj.name} can now see the red hood of the car coming.
+  The car is getting nearer and ${localName} is regretting their decision. ${localName} can now see the red hood of the car coming.
   
-  Just as ${storyObj.name} gets ready for the numbing pain of the impact, it screeches to a stop. A suited man comes out of the car and he is holding a hand gun. “Where is the money?” the man shouts.`;
+  Just as ${localName} gets ready for the numbing pain of the impact, it screeches to a stop. A suited man comes out of the car and he is holding a hand gun. “Where is the money?” the man shouts.`;
 
-  let page6 = `${storyObj.name} decides to run away. In the distance ${storyObj.name} hears a car. Its headlights are getting closer. ${storyObj.name} takes a left turn into a dark alleyway and end up behind a small boat house. ${storyObj.name} sees the car speed past and ${storyObj.name} decides to flank it.
+  let page6 = `${localName} decides to run away. In the distance ${localName} hears a car. Its headlights are getting closer. ${localName} takes a left turn into a dark alleyway and end up behind a small boat house. ${localName} sees the car speed past and ${localName} decides to flank it.
 
-  ${storyObj.name} runs onto the main road and lose it. It only took ${storyObj.name} ten minutes to find the nearest police station.
+  ${localName} runs onto the main road and lose it. It only took ${localName} ten minutes to find the nearest police station.
   
-  Once ${storyObj.name} arrives, they quickly tell the story. Thirty minutes later the police sergeant returns looking happy with himself. He tells ${storyObj.name} that they were the bait in a drug bust and now ${storyObj.name} is a key person in the crime of the year.
+  Once ${localName} arrives, they quickly tell the story. Thirty minutes later the police sergeant returns looking happy with himself. He tells ${localName} that they were the bait in a drug bust and now ${localName} is a key person in the crime of the year.
   
   
   THE END`;
@@ -78,22 +81,81 @@ function options() {
 }
 
 function pages() {
-  pageArr.push(new Page(storyArr[0], 'page1', optArr[0], optArr[1]));
+  pageArr.push(new Page(storyArr[0], optArr[0], optArr[1], 'page1'));
   pageArr.push(new Page(storyArr[1], 'page2'));
-  pageArr.push(new Page(storyArr[2], 'page3', optArr[2]));
-  pageArr.push(new Page(storyArr[3], 'page4', optArr[3], optArr[4]));
-  pageArr.push(new Page(storyArr[4], 'page5', optArr[5]));
+  pageArr.push(new Page(storyArr[2], optArr[2], 'page3'));
+  pageArr.push(new Page(storyArr[3], optArr[3], optArr[4], 'page4'));
+  pageArr.push(new Page(storyArr[4], optArr[5], 'page5'));
   pageArr.push(new Page(storyArr[5], 'page6'));
 }
 
+function renderPages(){
+
+  storyText.textContent = pageArr[0].story;
+  choiceOne.textContent = pageArr[0].option1;
+  choiceOne.value = pageArr[0].option1;
+  choiceTwo.textContent = pageArr[0].option2;
+  choiceTwo.value = pageArr[0].option2;
+
+
+}
+
+// Event Handlers
+function handleClick(event){
+  event.preventDefault();
+
+  switch(selectOpt.value) {
+  case optArr[0]: //open mail to page 3
+    storyText.textContent = pageArr[2].story;
+    choiceOne.textContent = pageArr[2].option1;
+    choiceOne.value = pageArr[2].option1;
+    choiceTwo.textContent = pageArr[2].option2;
+    choiceTwo.value = pageArr[2].option2;
+    break;
+  case optArr[1]: // go inside, story ends
+    alert('Your adventure ends here!  Thanks for playing!');
+    break;
+
+  case optArr[2]: // stand your ground go to page 5
+    storyText.textContent = pageArr[4].story;
+    choiceOne.textContent = pageArr[4].option1;
+    choiceOne.value = pageArr[4].option1;
+    choiceTwo.textContent = pageArr[4].option2;
+    choiceTwo.value = pageArr[4].option2;
+    break;
+
+  case optArr[3]: // run away as fast as you can, go to page 6
+    storyText.textContent = pageArr[5].story;
+    choiceOne.textContent = pageArr[5].option1;
+    choiceOne.value = pageArr[5].option1;
+    choiceTwo.textContent = pageArr[5].option2;
+    choiceTwo.value = pageArr[5].option2;
+    break;
+
+  case optArr[4]: // stand your ground, go to page 5
+    storyText.textContent = pageArr[3].story;
+    choiceOne.textContent = pageArr[3].option1;
+    choiceOne.value = pageArr[3].option1;
+    choiceTwo.textContent = pageArr[3].option2;
+    choiceTwo.value = pageArr[3].option2;
+    break;
+
+  case optArr[5]:
+    break;
+
+  default:
+    console.log('No choice made');
+  }
+
+}
 // Executable code
-let storyObject = new Story('George'); // testing purposes only
-storyLine(storyObject);
+let storeName = localStorage.getItem('username');
+let parseName = JSON.parse(storeName);
+// console.log(parseName);
+
+storyLine(parseName);
 options();
 pages();
+renderPages();
 
-console.log(storyArr);
-console.log(optArr);
-console.log(pageArr);
-
-
+myForm.addEventListener('submit', handleClick);
