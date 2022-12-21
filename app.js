@@ -14,6 +14,9 @@ let selectOpt = document.getElementById('options');
 let optBtn = document.getElementById('options-btn');
 let pgImg = document.getElementById('page-image');
 let body = document.getElementById('bust-body');
+let pLightImg1 = document.getElementById('cop-light-1');
+let pLightImg2 = document.getElementById('cop-light-2');
+
 
 // Constructor function
 function Page(story, option1 = '', option2 = '', name) {
@@ -111,8 +114,7 @@ function handleClick(event){
     choiceOne.textContent = pageArr[2].option1;
     choiceOne.value = pageArr[2].option1;
     choiceTwo.style.visibility = 'hidden';
-    // choiceTwo.textContent = '';
-    // choiceTwo.value = '';
+
     pgImg.src = "./img/dark-pier.jpg";
     break;
 
@@ -126,7 +128,6 @@ function handleClick(event){
 
     myForm.style.visibility = 'hidden';
     document.querySelector('body').classList.add('bust');
-    //alert('Your adventure ends here!  Thanks for playing!');
     break;
 
   case optArr[2]: // stand your ground go to page 5
@@ -148,7 +149,8 @@ function handleClick(event){
 
     myForm.style.visibility = 'hidden';
     document.querySelector('body').classList.add('bust');
-    //body.classList.add("bust");
+    // pLightImg1.src = "./img/police-lights.gif";
+    // pLightImg2.src = "./img/police-lights.gif";
     break;
 
   case optArr[4]: // stand your ground, go to page 5
@@ -156,8 +158,7 @@ function handleClick(event){
     choiceOne.textContent = pageArr[4].option1;
     choiceOne.value = pageArr[4].option1;
     choiceTwo.style.visibility = 'hidden';
-    // choiceTwo.textContent = '';
-    // choiceTwo.value = '';
+  
     pgImg.src = "./img/oncoming-Traffic.jpg";
     break;
 
@@ -170,8 +171,9 @@ function handleClick(event){
     pgImg.src = "./img/Undercover-Drug-Busts.jpg";
 
     myForm.style.visibility = 'hidden';
-    //body.classList.add("bust");
     document.querySelector('body').classList.add('bust');
+    // pLightImg1.src = "./img/police-lights.gif";
+    // pLightImg2.src = "./img/police-lights.gif";
     break;
 
   default:
