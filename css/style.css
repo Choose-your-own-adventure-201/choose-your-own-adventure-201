@@ -1,1 +1,105 @@
+ ::before, ::after {
+  box-sizing: border-box;
+  font-family: sans-serif;
+} 
+
+body {
+  background-color: wheat;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  width: 0 auto;
+  
+
+}
+
+header {
+  font-size: 30px;
+  background-color: wheat;
+  border: 1x solid black;
+  height: 5%;
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  color: green;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-weight: lighter;
+} 
+
+
+nav {
+  font-size: 20px;
+
+  background-color: #e6e1e1;
+  border: 1px solid black;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav>img {
+  max-width: 20%;
+  vertical-align: middle;
+  margin-right: 50px;
+  margin-left: 50px;
+
+}
+
+#page-image {
+  width: 100%;
+  height: auto;
+}
+
+#story-text {
+  width: 100%;
+  /* max-width: 50%; */
+  background-color: grey;
+  color: whitesmoke;
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px;
+  align-items: center; 
+
+}
+
+#options {
+  background-color: rgb(98, 155, 98);
+  font-size: 30px;
+}
+
+#option1 {
+
+}
+
+#option2 {
+
+}
+
+#option-btn {
+  /* display: flex;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 20px;
+  align-items: center; */
+background-color: green;
+
+
+}
+
+
 
