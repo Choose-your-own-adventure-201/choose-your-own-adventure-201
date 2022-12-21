@@ -11,13 +11,11 @@ body {
 
 }
 
-
 main {
   max-width: 960px;
   margin: 0 auto;
   width: 0 auto;
   
-
 }
 
 header {
@@ -102,8 +100,6 @@ background-color: green;
 }
 
 .bust {
-    width: 200px;
-    height: 150px;
     background-color: black;
     -webkit-animation-name: animate1; /* Chrome, Safari, Opera */
     animation-name: animate1;
