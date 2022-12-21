@@ -109,8 +109,9 @@ function handleClick(event){
     storyText.textContent = pageArr[2].story;
     choiceOne.textContent = pageArr[2].option1;
     choiceOne.value = pageArr[2].option1;
-    choiceTwo.textContent = '';
-    choiceTwo.value = '';
+    choiceTwo.style.visibility = 'hidden';
+    // choiceTwo.textContent = '';
+    // choiceTwo.value = '';
     pgImg.src = "./img/dark-pier.jpg";
     break;
 
@@ -151,8 +152,9 @@ function handleClick(event){
     storyText.textContent = pageArr[4].story;
     choiceOne.textContent = pageArr[4].option1;
     choiceOne.value = pageArr[4].option1;
-    choiceTwo.textContent = '';
-    choiceTwo.value = '';
+    choiceTwo.style.visibility = 'hidden';
+    // choiceTwo.textContent = '';
+    // choiceTwo.value = '';
     pgImg.src = "./img/oncoming-Traffic.jpg";
     break;
 
