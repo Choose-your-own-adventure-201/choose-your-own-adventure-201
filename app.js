@@ -13,6 +13,7 @@ let myForm = document.querySelector('form');
 let selectOpt = document.getElementById('options');
 let optBtn = document.getElementById('options-btn');
 let pgImg = document.getElementById('page-image');
+let body = document.getElementById('bust-body');
 
 // Constructor function
 function Page(story, option1 = '', option2 = '', name) {
@@ -109,8 +110,9 @@ function handleClick(event){
     storyText.textContent = pageArr[2].story;
     choiceOne.textContent = pageArr[2].option1;
     choiceOne.value = pageArr[2].option1;
-    choiceTwo.textContent = '';
-    choiceTwo.value = '';
+    choiceTwo.style.visibility = 'hidden';
+    // choiceTwo.textContent = '';
+    // choiceTwo.value = '';
     pgImg.src = "./img/dark-pier.jpg";
     break;
 
@@ -123,8 +125,8 @@ function handleClick(event){
     pgImg.src = "./img/driveway.jpg";
 
     myForm.style.visibility = 'hidden';
-
-    alert('Your adventure ends here!  Thanks for playing!');
+    document.querySelector('body').classList.add('bust');
+    //alert('Your adventure ends here!  Thanks for playing!');
     break;
 
   case optArr[2]: // stand your ground go to page 5
@@ -145,14 +147,17 @@ function handleClick(event){
     pgImg.src = "./img/Undercover-Drug-Busts.jpg";
 
     myForm.style.visibility = 'hidden';
+    document.querySelector('body').classList.add('bust');
+    //body.classList.add("bust");
     break;
 
   case optArr[4]: // stand your ground, go to page 5
     storyText.textContent = pageArr[4].story;
     choiceOne.textContent = pageArr[4].option1;
     choiceOne.value = pageArr[4].option1;
-    choiceTwo.textContent = '';
-    choiceTwo.value = '';
+    choiceTwo.style.visibility = 'hidden';
+    // choiceTwo.textContent = '';
+    // choiceTwo.value = '';
     pgImg.src = "./img/oncoming-Traffic.jpg";
     break;
 
@@ -164,8 +169,9 @@ function handleClick(event){
     choiceTwo.value = '';
     pgImg.src = "./img/Undercover-Drug-Busts.jpg";
 
-
     myForm.style.visibility = 'hidden';
+    //body.classList.add("bust");
+    document.querySelector('body').classList.add('bust');
     break;
 
   default:

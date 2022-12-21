@@ -101,5 +101,17 @@ background-color: green;
 
 }
 
-
-
+.bust {
+    width: 200px;
+    height: 150px;
+    background-color: black;
+    -webkit-animation-name: animate1; /* Chrome, Safari, Opera */
+    animation-name: animate1;
+    animation-duration: 7s;
+   animation-iteration-count: 1;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes animate1 {
+    0%   {background-color: white;}
+    100% {background-color: black;}
+}
