@@ -12,9 +12,10 @@ let myForm = document.querySelector('form');
 function handleClick(event) {
   event.preventDefault();
   let userName = event.target.username.value;
+  let capitalized = userName.charAt(0).toUpperCase() + userName.slice(1);
 
   // ****** Stored inputed user name to local storage *****
-  let userInput = JSON.stringify(userName.toUpperCase());
+  let userInput = JSON.stringify(capitalized);
   localStorage.setItem('username', userInput);
 
   window.location.href = './story.html';

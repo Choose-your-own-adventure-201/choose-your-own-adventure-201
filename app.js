@@ -145,12 +145,14 @@ function handleClick(event){
     choiceOne.value = '';
     choiceTwo.textContent = '';
     choiceTwo.value = '';
-    pgImg.src = "./img/Undercover-Drug-Busts.jpg";
 
+    pgImg.src = "./img/Undercover-Drug-Busts.jpg";
+    
     myForm.style.visibility = 'hidden';
     document.querySelector('body').classList.add('bust');
-    // pLightImg1.src = "./img/police-lights.gif";
-    // pLightImg2.src = "./img/police-lights.gif";
+
+    pLightImg1.src = './img/police-lights.gif';
+    pLightImg2.src = './img/police-lights.gif';
     break;
 
   case optArr[4]: // stand your ground, go to page 5
@@ -168,12 +170,14 @@ function handleClick(event){
     choiceOne.value = '';
     choiceTwo.textContent = '';
     choiceTwo.value = '';
+
     pgImg.src = "./img/Undercover-Drug-Busts.jpg";
 
     myForm.style.visibility = 'hidden';
     document.querySelector('body').classList.add('bust');
-    // pLightImg1.src = "./img/police-lights.gif";
-    // pLightImg2.src = "./img/police-lights.gif";
+
+    pLightImg1.src = './img/police-lights.gif';
+    pLightImg2.src = './img/police-lights.gif';
     break;
 
   default:
