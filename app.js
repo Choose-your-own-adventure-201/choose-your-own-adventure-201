@@ -16,6 +16,12 @@ let pgImg = document.getElementById('page-image');
 let body = document.getElementById('bust-body');
 let pLightImg1 = document.getElementById('cop-lights-1');
 let pLightImg2 = document.getElementById('cop-lights-2');
+let audio1 = new Audio('./audio/page_1.wav');
+let audio2 = new Audio('./audio/page_2.wav');
+let audio3 = new Audio('./audio/page_3.wav');
+let audio4 = new Audio('./audio/page_4.wav');
+let audio5 = new Audio('./audio/page_5.wav');
+let audio6 = new Audio('./audio/page_6.mp3');
 
 
 // Constructor function
@@ -27,7 +33,7 @@ function Page(story, option1 = '', option2 = '', name) {
 }
 
 // Helper function
-function storyLine (localName) {
+function storyLine(localName) {
   let page1 = `After a long hard day at a boring office job ${localName} arrives at home. Before walking into the house, ${localName} sees a letter in the mailbox, an unusual occurrence as bill day is Thursday not Monday.
   ${localName} goes up to the mailbox and sees that there is a little red letter—quite suspicious.`;
 
@@ -95,27 +101,30 @@ function pages() {
   pageArr.push(new Page(storyArr[5], 'page6'));
 }
 
-function renderPage(){
+function renderPage() {
   storyText.textContent = pageArr[0].story;
   choiceOne.textContent = pageArr[0].option1;
   choiceOne.value = pageArr[0].option1;
   choiceTwo.textContent = pageArr[0].option2;
   choiceTwo.value = pageArr[0].option2;
-  pgImg.src = "./img/mailbox.jpg";
+  pgImg.src = './img/mailbox.jpg';
+  audio1.play();
 }
 
 // Event Handlers
-function handleClick(event){
+function handleClick(event) {
   event.preventDefault();
+  audio1.pause();
 
-  switch(selectOpt.value) {
+  switch (selectOpt.value) {
   case optArr[0]: //open mail to page 3
     storyText.textContent = pageArr[2].story;
     choiceOne.textContent = pageArr[2].option1;
     choiceOne.value = pageArr[2].option1;
     choiceTwo.style.visibility = 'hidden';
+    audio3.play();
 
-    pgImg.src = "./img/dark-pier.jpg";
+    pgImg.src = './img/dark-pier.jpg';
     break;
 
   case optArr[1]: // go inside, story ends. go to page 2
@@ -124,7 +133,8 @@ function handleClick(event){
     choiceOne.value = '';
     choiceTwo.textContent = '';
     choiceTwo.value = '';
-    pgImg.src = "./img/driveway.jpg";
+    pgImg.src = './img/driveway.jpg';
+    audio2.play();
 
     myForm.style.visibility = 'hidden';
     document.querySelector('body').classList.add('bust');
@@ -139,7 +149,9 @@ function handleClick(event){
     choiceTwo.value = pageArr[3].option2;
     // console.log(choiceTwo.textContent);
     choiceTwo.style.visibility = 'visible';
-    pgImg.src = "./img/Pier-with-car.jpg";
+    pgImg.src = './img/Pier-with-car.jpg';
+    audio3.pause();
+    audio4.play();
     break;
 
   case optArr[3]: // stand your ground, go to page 5
@@ -147,9 +159,11 @@ function handleClick(event){
     choiceOne.textContent = pageArr[4].option1;
     choiceOne.value = pageArr[4].option1;
     choiceTwo.style.visibility = 'hidden';
-  // choiceTwo.textContent = '';
-  // choiceTwo.value = '';
-    pgImg.src = "./img/oncoming-Traffic.jpg";  
+    // choiceTwo.textContent = '';
+    // choiceTwo.value = '';
+    pgImg.src = './img/oncoming-Traffic.jpg';
+    audio4.pause();
+    audio5.play();
     console.log(optArr[3]);
 
     break;
@@ -160,9 +174,12 @@ function handleClick(event){
     choiceOne.value = '';
     choiceTwo.textContent = '';
     choiceTwo.value = '';
+    audio4.pause();
+    audio5.pause();
+    audio6.play();
 
-    pgImg.src = "./img/Undercover-Drug-Busts.jpg";
-    
+    pgImg.src = './img/Undercover-Drug-Busts.jpg';
+
     myForm.style.visibility = 'hidden';
     document.querySelector('body').classList.add('bust');
     break;
@@ -174,11 +191,13 @@ function handleClick(event){
     choiceTwo.textContent = '';
     choiceTwo.value = '';
 
-    pgImg.src = "./img/Undercover-Drug-Busts.jpg";
+    pgImg.src = './img/Undercover-Drug-Busts.jpg';
 
     myForm.style.visibility = 'hidden';
     document.querySelector('body').classList.add('bust');
-
+    audio4.pause();
+    audio5.pause();
+    audio6.play();
     pLightImg1.src = './img/police-lights.gif';
     pLightImg2.src = './img/police-lights.gif';
     break;
@@ -186,6 +205,7 @@ function handleClick(event){
   default:
     console.log('No choice made');
   }
+
 
 }
 // Executable code
