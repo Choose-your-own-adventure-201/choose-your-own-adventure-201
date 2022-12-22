@@ -82,7 +82,7 @@ function renderPage() {
   choiceOne.value = pageArr[0].option1;
   choiceTwo.textContent = pageArr[0].option2;
   choiceTwo.value = pageArr[0].option2;
-  pgImg.src = './img/mailbox.jpg';
+  pgImg.src = './img/empty-mailbox-blue-removebg-preview.png';
   audio1.play();
 }
 
