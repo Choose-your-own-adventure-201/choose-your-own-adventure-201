@@ -37,3 +37,5 @@
 [CSS animation sippet](https://codepen.io/tobyonline/pen/XJGbry)
 
 [Audio Files](https://freesound.org/people/Warped_Tension/)
+
+[Seagulls audio](https://freesound.org/people/juskiddink/sounds/98479/)
