@@ -6,6 +6,10 @@
 ## Collaborators
 - Dennis Palucki, Steve Gant, Marco Villafana, Benjamin Rude, Yaz Ahmed
 
+## Project Description
+
+A website that interfaces with a user, taking input and guiding them on an adventure.  
+
 ## Wireframe
 
 ![Home page](./img/Home_pg1.png)
