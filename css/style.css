@@ -1,3 +1,4 @@
+/* css sippet from https://codepen.io/tobyonline/pen/XJGbry */
  ::before, ::after {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -123,4 +124,8 @@ background-color: green;
 @-webkit-keyframes animate1 {
     0%   {background-color: white;}
     100% {background-color: black;}
+}
+
+#cop-lights-1{
+
 }
