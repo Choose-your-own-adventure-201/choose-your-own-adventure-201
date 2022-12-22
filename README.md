@@ -12,6 +12,10 @@
 ![Adventure page](./img/Adventure_pg2.png)
 ![About Us page](./img/About_us_pg3.png)
 
+## Domain Model
+
+![domain model](./img/Flowchart.jpg)
+
 ## Attributions
 
 [Page 1 - House](https://www.freepik.com/free-vector/suburban-house-countryside_13643575.htm#query=cartoon%20house&position=7&from_view=keyword")
