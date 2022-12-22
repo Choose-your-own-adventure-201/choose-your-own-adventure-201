@@ -1,16 +1,8 @@
-<<<<<<< HEAD
- ::before,
- ::after {
-   box-sizing: border-box;
-   font-family: sans-serif;
- }
-=======
 /* css sippet from https://codepen.io/tobyonline/pen/XJGbry */
  ::before, ::after {
   box-sizing: border-box;
   font-family: sans-serif;
 } 
->>>>>>> staging
 
  body {
    background-color: wheat;
