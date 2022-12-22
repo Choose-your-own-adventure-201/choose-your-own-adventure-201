@@ -34,42 +34,17 @@ function Page(story, option1 = '', option2 = '', name) {
 
 // Helper function
 function storyLine(localName) {
-  let page1 = `After a long hard day at a boring office job ${localName} arrives at home. Before walking into the house, ${localName} sees a letter in the mailbox, an unusual occurrence as bill day is Thursday not Monday.
-  ${localName} goes up to the mailbox and sees that there is a little red letter—quite suspicious.`;
+  let page1 = `After a long hard day at a boring office job ${localName} arrives at home. Before walking into the house, ${localName} sees a letter in the mailbox, an unusual occurrence as bill day is Thursday not Monday.  ${localName} goes up to the mailbox and sees that there is a little red letter... quite suspicious.`;
 
-  let page2 = `${localName} decides that it is too suspicious and chooses to go inside. Half way up the drive ${localName} slips and falls head first on a rock.
-  No one knows what happened to ${localName}'s body. Did the writer of the letter take it?
-   
-  THE END`;
+  let page2 = `${localName} decides that it is too suspicious and chooses to go inside. Half way up the drive ${localName} slips and falls head first on a rock.  No one knows what happened to ${localName}'s body. Did the writer of the letter take it?  THE END`;
 
-  let page3 = `${localName} is too curious not to answer the mail. So ${localName} grabs it out of the mailbox and open it and find seven words.
+  let page3 = `${localName} is too curious not to answer the mail. So ${localName} grabs it out of the mailbox and opens it to find seven words, ‘Meet me on the docks at twelve.’  ${localName} is not that sure whether to go or not because it seems like a stereotypical set up for a camp fire story.`;
 
-  ‘Meet me on the docks at twelve’
-  
-  ${localName} is not that sure whether to go or not because it seems like a stereotypical set up for a camp fire story.  
-  
-  Drive up to the dock to find out who sent the letter`;
+  let page4 = `${localName} decides to go down to the docks to confront the person who wrote the red letter.  11:59 pm and there is no one there. Where is he? ${localName} thinks, did they forget? Is it a prank?  Then ${localName} hears a car rumble in the distance. A pair of bright yellow headlights pop into existence and they are heading straight at ${localName}, the engine noise getting louder.`;
 
-  let page4 = `${localName} decides to go down to the docks to confront the person who wrote the red letter.
+  let page5 = `${localName} decides to fight. The car is getting dangerously close. Five seconds feels like an eternity.  The car is getting nearer and ${localName} is regretting a rash decision. ${localName} can now clearly see the red hood of the car coming.  Just as ${localName} is getting ready for the numbing pain of the impact, the car screeches to a stop. A suited man leaps out of the car brandishing a hand gun. “Where is the money?” the man shouts.`;
 
-  11:59 pm and there is no one there. Where is he? ${localName} thinks, did they forget? Is it a prank?
-  
-  Then ${localName} hears a car rumble in the distance. A pair of bright yellow headlights pop into existence and they are heading straight at ${localName}, the engine noise getting louder.`;
-
-  let page5 = `${localName} decides to fight. The car is getting dangerously close to ${localName}. Five seconds feels like an eternity.
-
-  The car is getting nearer and ${localName} is regretting a rash decision. ${localName} can now clearly see the red hood of the car coming.
-  
-  Just as ${localName} is getting ready for the numbing pain of the impact, the car screeches to a stop. A suited man leaps out of the car brandishing a hand gun. “Where is the money?” the man shouts.`;
-
-  let page6 = `Seeing the gun, ${localName} decides to run away. In the distance ${localName} hears a car. Its headlights are getting closer. ${localName} takes a left turn into a dark alleyway and ends up behind a small boat house. ${localName} sees the car speed past and decides to flank it.
-
-  ${localName} runs onto the main road and loses it. It only took ${localName} ten minutes to find the nearest police station.
-  
-  ${localName} arrives at the police stationand quickly tells the story. Thirty minutes later the police sergeant returns looking happy with himself. He tells ${localName} that they were the bait in a drug bust and now ${localName} is a key person in the crime of the year.
-  
-  
-  THE END`;
+  let page6 = `Seeing the gun, ${localName} decides to run away. In the distance ${localName} hears a car. Its headlights are getting closer. ${localName} takes a left turn into a dark alleyway and ends up behind a small boat house. ${localName} sees the car speed past and decides to flank it.  ${localName} runs onto the main road and loses it. It only took ${localName} ten minutes to find the nearest police station.  ${localName} arrives at the police station and quickly tells the story. Thirty minutes later the police sergeant returns looking happy with himself. He tells ${localName} that they were the bait in a drug bust and now ${localName} is a key person in the crime of the year.  THE END`;
 
   storyArr.push(page1, page2, page3, page4, page5, page6);
 }
