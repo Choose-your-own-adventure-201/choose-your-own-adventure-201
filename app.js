@@ -139,7 +139,7 @@ function handleClick(event){
     choiceTwo.value = pageArr[3].option2;
     // console.log(choiceTwo.textContent);
     choiceTwo.style.visibility = 'visible';
-    pgImg.src = "./img/House.jpg";
+    pgImg.src = "./img/Pier-with-car.jpg";
     break;
 
   case optArr[3]: // stand your ground, go to page 5
