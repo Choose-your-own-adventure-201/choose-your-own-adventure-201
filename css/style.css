@@ -62,17 +62,30 @@ nav>img {
   height: auto;
 }
 
-#story-text {
-  width: 100%;
-  /* max-width: 50%; */
-  background-color: grey;
-  color: whitesmoke;
-  font-size: 40px;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px 2px;
-  align-items: center; 
+/* Credit to Sebastian Devassy stackoverflow.com who gave me the framework for story-text & scroll - Ben R */
 
+#story-text {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  width:750px;
+  height: 500px;
+  font-size:175%;
+  color:rgb(39, 35, 35);
+  font-weight:bold;
+  font-family:'Eczar', serif;
+  line-height: 2;
+}
+
+#scroll {
+  background-image:url("/img/png-image.png");
+  background-repeat:no-repeat;
+  background-size: 1000px;
+  width: 1000px;
+  height: 1300px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #options {
