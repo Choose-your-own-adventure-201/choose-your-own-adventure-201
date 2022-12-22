@@ -12,6 +12,10 @@
 ![Adventure page](./img/Adventure_pg2.png)
 ![About Us page](./img/About_us_pg3.png)
 
+## Domain Model
+
+![domain model](./img/Flowchart.jpg)
+
 ## Attributions
 
 [Page 1 - House](https://www.freepik.com/free-vector/suburban-house-countryside_13643575.htm#query=cartoon%20house&position=7&from_view=keyword")
@@ -29,3 +33,7 @@
 [drug-bust](https://www.drugcrime-law.com/blog/2018/september/undercover-drug-busts-and-drug-charges/)
 
 [police-light](https://www.lcpdfr.com/forums/topic/79461-police-gif-relesase-2/)
+
+[CSS animation sippet](https://codepen.io/tobyonline/pen/XJGbry)
+
+[Audio Files](https://freesound.org/people/Warped_Tension/)
