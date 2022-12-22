@@ -30,4 +30,5 @@
 
 [police-light](https://www.lcpdfr.com/forums/topic/79461-police-gif-relesase-2/)
 
+[CSS animation sippet](https://codepen.io/tobyonline/pen/XJGbry)
 [Audio Files](https://freesound.org/people/Warped_Tension/)
