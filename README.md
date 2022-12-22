@@ -6,6 +6,10 @@
 ## Collaborators
 - Dennis Palucki, Steve Gant, Marco Villafana, Benjamin Rude, Yaz Ahmed
 
+## Project Description
+
+A website that interfaces with a user, taking input and guiding them on an adventure.  
+
 ## Wireframe
 
 ![Home page](./img/Home_pg1.png)
@@ -37,3 +41,5 @@
 [CSS animation sippet](https://codepen.io/tobyonline/pen/XJGbry)
 
 [Audio Files](https://freesound.org/people/Warped_Tension/)
+
+[Seagulls audio](https://freesound.org/people/juskiddink/sounds/98479/)

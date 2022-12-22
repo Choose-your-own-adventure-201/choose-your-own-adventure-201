@@ -19,7 +19,7 @@ let pLightImg2 = document.getElementById('cop-lights-2');
 let audio1 = new Audio('./audio/page_1.wav');
 let audio2 = new Audio('./audio/page_2.wav');
 let audio3 = new Audio('./audio/page_3.wav');
-let audio4 = new Audio('./audio/page_4.wav');
+let audio4 = new Audio('./audio/seagulls.wav');
 let audio5 = new Audio('./audio/page_5.wav');
 let audio6 = new Audio('./audio/page_6.mp3');
 
@@ -82,7 +82,7 @@ function renderPage() {
   choiceOne.value = pageArr[0].option1;
   choiceTwo.textContent = pageArr[0].option2;
   choiceTwo.value = pageArr[0].option2;
-  pgImg.src = './img/mailbox.jpg';
+  pgImg.src = './img/empty-mailbox-blue-removebg-preview.png';
   audio1.play();
 }
 
