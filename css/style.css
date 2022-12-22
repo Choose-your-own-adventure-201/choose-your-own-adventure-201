@@ -30,10 +30,12 @@ header {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
   background-color: #e6e1e1;
   border: 1px solid black;
-  text-align: center;
   margin: 0px;
   padding: 0px;
   height: 4vw;
@@ -137,3 +139,24 @@ background-color: green;
     100% {background-color: black;}
 }
 
+.fade-in {
+  /* -webkit-animation-name: fadeIn; */
+  /* animation-name: fadeIn; */
+  animation-duration: 20s;
+  /* animation-delay: 3s; */
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  5% {opacity: .05;}
+  15% {opacity: .15;}
+  25% {opacity: .25;}
+  50% {opacity: .50;}
+  65% {opacity: .65;}
+  75% {opacity: .75;}
+  100% {opacity: 1;}
+}
+
+img {
+  opacity: 75%;
+}

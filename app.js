@@ -174,7 +174,10 @@ function handleClick(event) {
     audio5.pause();
     audio6.play();
     pLightImg1.src = './img/police-lights.gif';
+    pLightImg1.parentElement.style.animationName = 'fadeIn';
     pLightImg2.src = './img/police-lights.gif';
+    pLightImg2.parentElement.style.animationName = 'fadeIn';
+
     break;
 
   default:
