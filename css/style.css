@@ -155,6 +155,7 @@ margin: 10rem auto 0 auto;
   width: 100%; 
   height: 300px;
   border: 1px solid black;
+  margin-bottom: 40px;
 }
 
 .bio article {
