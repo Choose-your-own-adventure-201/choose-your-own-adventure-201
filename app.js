@@ -28,7 +28,7 @@ function Page(story, option1 = '', option2 = '', name) {
 
 // Helper function
 function storyLine (localName) {
-  let page1 = `After a long hard day at a boring office job ${localName} arrives at home. Before walking into the house ${localName} sees a letter in the mailbox, an unusual occurrence as bill day is Thursday not Monday.
+  let page1 = `After a long hard day at a boring office job ${localName} arrives at home. Before walking into the house, ${localName} sees a letter in the mailbox, an unusual occurrence as bill day is Thursday not Monday.
   ${localName} goes up to the mailbox and sees that there is a little red letter—quite suspicious.`;
 
   let page2 = `${localName} decides that it is too suspicious and chooses to go inside. Half way up the drive ${localName} slips and falls head first on a rock.
@@ -48,19 +48,19 @@ function storyLine (localName) {
 
   11:59 pm and there is no one there. Where is he? ${localName} thinks, did they forget? Is it a prank?
   
-  Then ${localName} hear a car rumble in the distance. A pair of bright yellow headlights pop into existence and they are heading straight at ${localName} and the noise is getting louder.`;
+  Then ${localName} hears a car rumble in the distance. A pair of bright yellow headlights pop into existence and they are heading straight at ${localName}, the engine noise getting louder.`;
 
-  let page5 = `${localName} decides to fight. The car is getting dangerously close to ${localName}. Five seconds feels like it has been an hour.
+  let page5 = `${localName} decides to fight. The car is getting dangerously close to ${localName}. Five seconds feels like an eternity.
 
-  The car is getting nearer and ${localName} is regretting their decision. ${localName} can now see the red hood of the car coming.
+  The car is getting nearer and ${localName} is regretting a rash decision. ${localName} can now clearly see the red hood of the car coming.
   
-  Just as ${localName} gets ready for the numbing pain of the impact, it screeches to a stop. A suited man comes out of the car and he is holding a hand gun. “Where is the money?” the man shouts.`;
+  Just as ${localName} is getting ready for the numbing pain of the impact, the car screeches to a stop. A suited man leaps out of the car brandishing a hand gun. “Where is the money?” the man shouts.`;
 
-  let page6 = `${localName} decides to run away. In the distance ${localName} hears a car. Its headlights are getting closer. ${localName} takes a left turn into a dark alleyway and end up behind a small boat house. ${localName} sees the car speed past and ${localName} decides to flank it.
+  let page6 = `Seeing the gun, ${localName} decides to run away. In the distance ${localName} hears a car. Its headlights are getting closer. ${localName} takes a left turn into a dark alleyway and ends up behind a small boat house. ${localName} sees the car speed past and decides to flank it.
 
-  ${localName} runs onto the main road and lose it. It only took ${localName} ten minutes to find the nearest police station.
+  ${localName} runs onto the main road and loses it. It only took ${localName} ten minutes to find the nearest police station.
   
-  Once ${localName} arrives, they quickly tell the story. Thirty minutes later the police sergeant returns looking happy with himself. He tells ${localName} that they were the bait in a drug bust and now ${localName} is a key person in the crime of the year.
+  ${localName} arrives at the police stationand quickly tells the story. Thirty minutes later the police sergeant returns looking happy with himself. He tells ${localName} that they were the bait in a drug bust and now ${localName} is a key person in the crime of the year.
   
   
   THE END`;
@@ -78,7 +78,7 @@ function options() {
   let opt4 = 'Run away as fast as you can'; // go to page 6
 
   // page three option
-  let opt5 = 'Drive up to the dock to find out who sent you the letter'; // go to page 4
+  let opt5 = 'Drive up to the dock to find out who sent the letter'; // go to page 4
 
   //page five option
   let opt6 = 'Run away'; // got to page 6
@@ -130,16 +130,31 @@ function handleClick(event){
     document.querySelector('body').classList.add('bust');
     break;
 
-  case optArr[2]: // stand your ground go to page 5
+  case optArr[2]: // drive down to dock page 4
+    storyText.textContent = pageArr[3].story;
+    choiceOne.textContent = pageArr[3].option1;
+    choiceOne.value = pageArr[3].option1;
+    // console.log(pageArr[3].option2);
+    choiceTwo.textContent = pageArr[3].option2;
+    choiceTwo.value = pageArr[3].option2;
+    // console.log(choiceTwo.textContent);
+    choiceTwo.style.visibility = 'visible';
+    pgImg.src = "./img/House.jpg";
+    break;
+
+  case optArr[3]: // stand your ground, go to page 5
     storyText.textContent = pageArr[4].story;
     choiceOne.textContent = pageArr[4].option1;
     choiceOne.value = pageArr[4].option1;
-    choiceTwo.textContent = '';
-    choiceTwo.value = '';
-    pgImg.src = "./img/oncoming-Traffic.jpg";
+    choiceTwo.style.visibility = 'hidden';
+  // choiceTwo.textContent = '';
+  // choiceTwo.value = '';
+    pgImg.src = "./img/oncoming-Traffic.jpg";  
+    console.log(optArr[3]);
+
     break;
 
-  case optArr[3]: // run away as fast as you can, go to page 6
+  case optArr[4]: // run away as fast as you can, go to page 6
     storyText.textContent = pageArr[5].story;
     choiceOne.textContent = '';
     choiceOne.value = '';
@@ -150,18 +165,6 @@ function handleClick(event){
     
     myForm.style.visibility = 'hidden';
     document.querySelector('body').classList.add('bust');
-
-    pLightImg1.src = './img/police-lights.gif';
-    pLightImg2.src = './img/police-lights.gif';
-    break;
-
-  case optArr[4]: // stand your ground, go to page 5
-    storyText.textContent = pageArr[4].story;
-    choiceOne.textContent = pageArr[4].option1;
-    choiceOne.value = pageArr[4].option1;
-    choiceTwo.style.visibility = 'hidden';
-  
-    pgImg.src = "./img/oncoming-Traffic.jpg";
     break;
 
   case optArr[5]: // runaway, go to page 6
