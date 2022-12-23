@@ -6,46 +6,56 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Story</title>
-  <link rel="reset" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="reset" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://www.fontspace.com/winter-snow-white-font-f83762">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
   <header>
-
+    <h1> Choose Your Own Adventure</h1>
     <nav>
-
       <img src="" alt="">
-      <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ul>
-
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About Us</a>
     </nav>
-
   </header>
-
+  <div class="fade-in">
+    <img src=""  id="cop-lights-1">
+  </div>
   <main>
+    <section id="story">
+      <img src="" id="page-image">
 
-    <img>
+      <section id="scroll">
+        <p id="story-text"></p>
+      </section>
+    </section>
     
-    <p></p>
 
-    <form>
-
-      <label></label>
-      <select>
-        <option></option>
-        <option></option>
+    <form class="seperate">
+      <label for="options"><b>Choose One</b></label>
+      <select id="options" name="options">
+        <option id="option1"></option>
+        <option id="option2"></option>
       </select>
-
+      <button id="options-btn" type="submit">Enter</button>
     </form>
-
   </main>
-
-  <footer>&copy Choose Your Own Adventure</footer>
-
+  <div class="fade-in">
+    <img src="" id="cop-lights-2">
+  </div>
+  <footer>
+    <div id="footer">
+      &copy Choose Your Own Adventure
+    </div>
+  </footer>
+  <script src="./js/app.js"></script>
 </body>
