@@ -39,14 +39,6 @@ grid-template-rows: 1fr;
   grid-area: 1 / 2 / 2 / 3;
 }
 
-<<<<<<< HEAD
- p {
-   font-size: 20px;
-   /* text-align: center; */
-   font-family: 'Merriweather', serif;
-   font-weight: lighter;
- }
-=======
 header {
   list-style: none;
   font-size: 30px;
@@ -56,7 +48,6 @@ header {
   text-align: center;
   font-weight: bold;
 }
->>>>>>> staging
 
 footer {
   display: flex;
@@ -159,83 +150,6 @@ nav>img {
 
 #option1 {}
 
-<<<<<<< HEAD
- #option-btn {
-   background-color: rgb(151, 177, 151);
-
-
-}
-/* main {
-  margin: 0;
-  font-family: sans-serif;
-}
-
-.section {
-  background-color: #252121;
-  display: flex;
-  justify-content: space-between;
-  padding: 40px;
-  width: 60%;
-margin: 10rem auto 0 auto;
-}
-
-.section img {
-  height: 250px;
-}
-
-.section h1 {
-  margin: 0;
-  color: greenyellow;
-}
-
-.section p {
-  color: #c0bdbd;
-  margin-right: 15px;
-
-} */
-
-.text {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-around;
-  width: 100%;
-  
-  
-  
-}
-
-.bio  {
-  display: flex;
-  justify-content: space-between;
-  background-color: #d7b2b8;
-  width: 100%; 
-  height: 300px;
-  border: 1px solid black;
-  margin-bottom: 40px;
-}
-
-.bio article {
-  margin-left: 30px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: -10px;
-
-}
-
-.bio article h2{
-  margin-bottom: -10px;
-  font-size: ;
-}
-
-
-#stev article h2{
-  margin-bottom: -10px;
-  /* display: inline-block; */
-}
-
-
-=======
 #option2 {}
 
 #options-btn {
@@ -248,7 +162,6 @@ margin: 10rem auto 0 auto;
   width: 100px;
   height: 37px;
 }
->>>>>>> staging
 
 
 
