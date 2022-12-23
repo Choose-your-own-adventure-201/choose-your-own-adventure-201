@@ -127,7 +127,7 @@ nav>img {
 }
 
 #scroll {
-  background-image: url("/img/scrollResize.png");
+  background-image: url("../img/scrollResize.png");
   background-repeat: no-repeat;
   background-size: 1000px;
   width: 1000px;
