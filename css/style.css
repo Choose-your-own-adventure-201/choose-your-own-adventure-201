@@ -1,12 +1,7 @@
 /* css sippet from https://codepen.io/tobyonline/pen/XJGbry */
-/* ::before,
-::after {
-  box-sizing: border-box;
-  font-family: sans-serif;
-} */
 
 body {
-  background-color: wheat;
+  background-color: rgb(76, 75, 72);
   font-family: 'Open Sans', sans-serif;
   width: 95vw;
   margin: auto;
@@ -24,8 +19,8 @@ main {
 
 .parent {
   display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
   grid-column-gap: 300px;
   grid-row-gap: 0px;
 }
@@ -40,14 +35,13 @@ grid-template-rows: 1fr;
 }
 
 header {
-  list-style: none;
   font-size: 30px;
-  background-color: wheat;
+  background-color: rgb(80, 77, 72);
   border: 1x solid black;
   height: 5%;
   text-align: center;
   font-weight: bold;
-}
+ }
 
 footer {
   display: flex;
@@ -93,7 +87,6 @@ p {
 
 nav {
   font-size: 20px;
-
   background-color: #e6e1e1;
   border: 1px solid black;
   align-items: center;
@@ -106,11 +99,10 @@ nav>img {
   vertical-align: middle;
   margin-right: 50px;
   margin-left: 50px;
-
 }
 
 #page-image {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
@@ -130,8 +122,11 @@ nav>img {
   overflow: auto;
 }
 
+#story {
+  display: flex;
+}
+
 #scroll {
-  /* background-image:url("/img/png-image.png"); */
   background-image: url("/img/scrollResize.png");
   background-repeat: no-repeat;
   background-size: 1000px;
@@ -148,22 +143,11 @@ nav>img {
   font-size: 30px;
 }
 
-#option1 {}
-
-#option2 {}
-
 #options-btn {
-  /* display: flex;
-  grid-template-columns: repeat(2, auto);
-  gap: 10px;
-  margin-top: 20px;
-  align-items: center; */
-  background-color: green;
+  background-color: rgb(20, 35, 20);
   width: 100px;
   height: 37px;
 }
-
-
 
 .bust {
   background-color: black;
@@ -185,143 +169,22 @@ nav>img {
   }
 }
 
-
-<<<<<<< HEAD
- 
-<<<<<<< HEAD
-=======
-/* Chrome, Safari, Opera */
-=======
-#yaz {
-  background-color: #d7b2b8;
-  text-align: center;
-  display: inline-block;
-  margin-left: 100 px;
-  text-align: center;
-  /* border: 5px solid black; */
-  border: 1px solid black;
-  margin-bottom: 50px;
-
-}
-
-#yaz h2 {
-  text-decoration: underline;
-  padding: 30px;
-  margin: 30px;
-  font-size: 60px;
-
-}
-
-
-#yaz p {
-  padding: 5px;
-  margin: 10px;
-  font-size: 30px;
-}
-
-#yaz img {
-  max-width: auto;
-  height: auto;
-  align-items: center;
-  width: auto;
-}
-
-#den {
-  background-color: #d7b2b8;
-  text-align: center;
-  display: inline-block;
-  margin-left: 100 px;
-  text-align: center;
-  /* border: 5px solid black; */
-  border: 1px solid black;
-  margin-bottom: 50px;
-
-}
-
-#den h2 {
-  text-decoration: underline;
-  padding: 30px;
-  margin: 30px;
-  font-size: 60px;
-
-}
-
-
-#den p {
-  padding: 5px;
-  margin: 10px;
-  font-size: 30px;
-}
-
-#den img {
-  max-width: auto;
-  height: auto;
-  align-items: center;
-
-}
-
-
-#ben {
-  background-color: #d7b2b8;
-  text-align: center;
-  display: inline-block;
-  margin-left: 100 px;
-  text-align: center;
-  /* border: 5px solid black; */
-  border: 1px solid black;
-  margin-bottom: 50px;
-
-}
-
-#ben h2 {
-  text-decoration: underline;
-  padding: 30px;
-  margin: 30px;
-  font-size: 60px;
-}
-
-#ben p {
-  padding: 5px;
-  margin: 10px;
-  font-size: 30px;
-}
-
-#option1 {}
-
-#option2 {}
-
-#option-btn {
-  /* display: flex;
-  grid-template-columns: repeat(2, auto);
-  gap: 10px;
-  margin-top: 20px;
-  align-items: center; */
-  background-color: green;
-
-
+#options-btn {
+  width: 100px;
+  height: 37px;
+  background-color: rgb(41, 80, 41);
+  color: white;
 }
 
 .bust {
   background-color: black;
   -webkit-animation-name: animate1;
-  /* Chrome, Safari, Opera */
   animation-name: animate1;
   animation-duration: 7s;
   animation-iteration-count: 1;
 }
 
-/* Chrome, Safari, Opera
->>>>>>> staging
-@-webkit-keyframes animate1 {
-    0%   {background-color: white;}
-    100% {background-color: black;}
-} */
-
 .seperate {
-  /* display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 20px; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -341,19 +204,10 @@ button {
   grid-area: 2 / 2 / 3 / 3;
 }
 
-#story {
-  /* display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 30px;
-grid-row-gap: 0px; */
-}
-
 .fade-in {
-  /* -webkit-animation-name: fadeIn; */
-  /* animation-name: fadeIn; */
+  display: flex;
+  justify-content: center;
   animation-duration: 20s;
-  /* animation-delay: 3s; */
 }
 
 @-webkit-keyframes fadeIn {
@@ -394,5 +248,37 @@ img {
   opacity: 75%;
 }
 
-/* #page-image{ grid-area: 1 / 1 / 3 / 3;}
-#scroll {grid-area: 1 / 3 / 3 / 5;} */
+/* about us css */
+.text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  width: 100%;
+ }
+ .bio {
+  display: flex;
+  justify-content: space-between;
+  background-color: #D7B2B8;
+  width: 100%;
+  height: 300px;
+  border: 1px solid black;
+  margin-bottom: 40px;
+ }
+ .bio article {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -10px;
+ }
+ .bio article h2{
+  margin-bottom: -10px;
+  /* font-size: ; */
+ }
+
+ /* #steve article h2{
+  margin-bottom: -10px;
+ } */
+ a {
+  padding-right: 20px;
+ }
